@@ -50,12 +50,30 @@ async function run(){
 
         })
 
+
         app.post('/comments',async(req,res)=>{
            const comment = req.body;
            console.log(comment)
            const result = await reviewCollection.insertOne(comment);
            res.send(result)
         })
+
+
+           app.get("/comments", async (req, res) => {
+            let query = {};
+            if(req.query.email){
+               query = { email: req.query.email };
+            }
+            if(req.query.post){
+               query = {post:req.query.post}
+            }
+            const cursor = reviewCollection.find(query);
+            const comments = await cursor.toArray();
+            res.send(comments);
+          });
+
+            
+
 
 
         
