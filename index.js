@@ -32,11 +32,9 @@ async function run(){
         app.get('/services',async(req,res)=>{
          const page = parseInt(req.query.page)
          const size = parseInt(req.query.size)
-         console.log(page,size)
          const query = {};
          const cursor = serviceCollection.find(query);
          const services = await cursor.skip(page*size).limit(size).toArray();
-         // const services = await cursor.toArray()
          const count = await serviceCollection.estimatedDocumentCount()
          res.send({count,services});
 
@@ -53,7 +51,6 @@ async function run(){
 
         app.post('/comments',async(req,res)=>{
            const comment = req.body;
-           console.log(comment)
            const result = await reviewCollection.insertOne(comment);
            res.send(result)
         })
@@ -70,6 +67,14 @@ async function run(){
             const cursor = reviewCollection.find(query);
             const comments = await cursor.toArray();
             res.send(comments);
+          });
+
+          app.delete("/comments/:id", async (req, res) => {
+            const id = req.params.id;
+            const query = {_id:ObjectId(id)}
+            console.log(query)
+            const result = await reviewCollection.deleteOne(query)
+            res.send(result)
           });
 
             
