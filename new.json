@@ -3,13 +3,11 @@
     "name": "Window Cleaning",
     "img": "https://i.ibb.co/Pz7R5jr/lenzil-gonsalves-ZWFSE7o2ovk-unsplash.jpg",
     "price": 50,
-    "features":
-      "1. POWER WASHING,2. GUTTER CLEANING,3. WINDOW TINTING AND FILM, 4. MIRROR CLEANING, 5. CLEANING WINDOW SCREENS AND STORM WINDOWS,6. CLEANING LIGHT FIXTURES,7. CLEANING CHANDELIERS AND CEILING FANS",
+    "features": "1. POWER WASHING,2. GUTTER CLEANING,3. WINDOW TINTING AND FILM, 4. MIRROR CLEANING, 5. CLEANING WINDOW SCREENS AND STORM WINDOWS,6. CLEANING LIGHT FIXTURES,7. CLEANING CHANDELIERS AND CEILING FANS",
 
     "description": "Many home and business owners wipe down their windows every so often and call it good. While washing your windows to get rid of any dirt and grime that accumulates is undoubtedly important, there’s a little more to it than a towel and bottle of window cleaner.That’s where professional window cleaning service like Clean Your Space come in to save the day.",
 
-    "benefits":
-      "1. Extend Your Windows’ Life,2. Enhance Your Windows’ Efficiency,3. Save Time & Energy",
+    "benefits": "1. Extend Your Windows’ Life,2. Enhance Your Windows’ Efficiency,3. Save Time & Energy",
     "ratings": 4.5,
     "reviews": [
       {
@@ -33,14 +31,21 @@
     "name": "Residential Cleaning",
     "img": "https://i.ibb.co/F4t6PFD/sidekix-media-AK42-TQRy-Cw-unsplash.jpg",
     "price": 70,
-
-    "features":
-      "1. Carpet and area rug cleaning,2. Wood floor cleaning and restoration,3. Upholstery cleaning,4. Drapery cleaning,5. Blind cleaning,6. Natural stone care,7. Concrete floor care",
-
-
+    "features": [
+      "1. Carpet and area rug cleaning",
+      "2. Wood floor cleaning and restoration",
+      "3. Upholstery cleaning",
+      "4. Drapery cleaning",
+      "5. Blind cleaning",
+      "6. Natural stone care",
+      "7. Concrete floor care"
+    ],
     "description": "Keeping your home clean takes time and energy. No matter how diligently you do all the usual daily tasks, eventually, your home will need a deeper, more thorough cleaning. Rather than pulling out the buckets, brushes, mops, and special cleaning products, why not turn it over to the professionals at CYS? Deep cleaning is what i do – and i do it every time. There are plenty of reasons to hire a professional residential cleaning service. Look them over and then give a call! I am here to make your life easier. Find a CYS location near you. ",
-    "benefits": 
-      "1. Healthy Indoor Air ,2. Fully Cleaned Shades, Drapes, and Blinds ,3. Save Time & Energy",
+    "benefits": [
+      "1. Healthy Indoor Air ",
+      "2. Fully Cleaned Shades, Drapes, and Blinds ",
+      "3. Save Time & Energy"
+    ],
     "ratings": 5,
     "reviews": [
       {
@@ -64,15 +69,19 @@
     "name": "COMMERCIAL CLEANING",
     "img": "https://i.ibb.co/hVbBdL0/kate-sade-2z-Zp12-Chxh-U-unsplash.jpg",
     "price": 150,
-
-    "features":
-      "1. Green Cleaning,2. Carpet Cleaning,3. Glass Cleaning,4. Post Construction Cleaning,5. Emergency Response Clean Up",
-
+    "features": [
+      "1. Green Cleaning",
+      "2. Carpet Cleaning",
+      "3. Glass Cleaning",
+      "4. Post Construction Cleaning",
+      "5. Emergency Response Clean Up"
+    ],
     "description": "Here’s a scary thought: on average, an office desk contains 400 times more germs than an office toilet seat. If you’re a business owner, the more germs that linger in your building, the more you’re going to have employees calling out sick. And if your building serves customers, then you risk getting them sick too.Of course, you don’t have time to clean the building yourself, so why not turn to a commercial cleaning company instead? Keep reading to learn more about the benefits of hiring a commercial cleaner so you can decide if it’s the right move for your company. ",
-
-    "benefits":
-      "1. IT’S COST-EFFECTIVE,2. IT HELPS KEEP YOUR CUSTOMERS AND EMPLOYEES SAFE,3. IT MAKES A BETTER FIRST IMPRESSION",
-
+    "benefits": [
+      "1. IT’S COST-EFFECTIVE",
+      "2. IT HELPS KEEP YOUR CUSTOMERS AND EMPLOYEES SAFE",
+      "3. IT MAKES A BETTER FIRST IMPRESSION"
+    ],
     "ratings": 4.5,
     "reviews": [
       {
@@ -96,15 +105,20 @@
     "name": "APARTMENT CLEANING",
     "img": "https://i.ibb.co/sFznC4T/ian-dooley-JR5-Tx-KNSo-unsplash.jpg",
     "price": 100,
-
-    "features": 
-      "1. Bathroom Deep Cleaning,2. Sofa/Chair Cleaning,3. Kitchen Cleaning (Without Kitchen Hood, inside Cabinet clean, If need price will add accordingly),4. Carpet Cleaning,5. Home Deep Cleaning,6. Window Cleaning",
-
+    "features": [
+      "1. Bathroom Deep Cleaning",
+      "2. Sofa/Chair Cleaning",
+      "3. Kitchen Cleaning (Without Kitchen Hood, inside Cabinet clean, If need price will add accordingly)",
+      "4. Carpet Cleaning",
+      "5. Home Deep Cleaning",
+      "6. Window Cleaning"
+    ],
     "description": "Living in an apartment or condo is all about convenience. Most complexes include on-site maintenance, repair, and landscaping services, so the only thing left for you to do is keep your home clean. But what if you made apartment living even simpler with professional apartment cleaning from Clean Your Space®? Imagine how good it would feel to offload your dreaded cleaning duties and get extra R&R on the weekends. To reach your dreams of coming home to a clean apartment more often, look to Clean Your Space, the most trusted home and apartment cleaning service.",
-
-    "benefits":
-      "1. Healthy Indoor Air ,2. Fully Cleaned Shades, Drapes, and Blinds ,3. Save Time & Energy",
-
+    "benefits": [
+      "1. Healthy Indoor Air ",
+      "2. Fully Cleaned Shades, Drapes, and Blinds ",
+      "3. Save Time & Energy"
+    ],
     "ratings": 4.5,
     "reviews": [
       {
@@ -128,13 +142,21 @@
     "name": "Carpet Cleaning",
     "img": "https://i.ibb.co/F7J3QF3/no-revisions-cp-Ig-Naaz-Q6w-unsplash.jpg",
     "price": 80,
-    "features":
-      "1. Carpet cleaning.,2. Rug Cleaning.,3. Carpet deep cleaning.,4. Carpet steam cleaning.,5. Carpet shampooing.,6. Carpet dry cleaning,7. Green cleaning and carpets",
-
+    "features": [
+      "1. Carpet cleaning.",
+      "2. Rug Cleaning.",
+      "3. Carpet deep cleaning.",
+      "4. Carpet steam cleaning.",
+      "5. Carpet shampooing.",
+      "6. Carpet dry cleaning",
+      "7. Green cleaning and carpets"
+    ],
     "description": "You never have to ask United Carpet Cleaners for organic, nontoxic, or biodegradable products. It doesn't cost you extra, and you don't have to wait for a clerk to order or restock the products. That's because every single one of the products we use is simply the safest and the most effective on the market. We are committed to finding the products that will leave your space spotlessly clean, fresh-smelling, and with the healthiest environment possible. No arguments, no excuses! You don't need to tell us twice to do our best job the first time!Our business would not have been completed without our customers, and our inscription to customer service gives an instance of this. We work hard to be your carpet cleaning as your choice, and you'll feel the difference from the moment you contact us.",
-    "benefits":
-      "1. Eco-friendly steam cleaning services,2. 100% Customer satisfaction guarantee,3. Knowledgeable steam cleaning.",
-
+    "benefits": [
+      "1. Eco-friendly steam cleaning services",
+      "2. 100% Customer satisfaction guarantee",
+      "3. Knowledgeable steam cleaning."
+    ],
     "ratings": 4.5,
     "reviews": [
       {
@@ -158,13 +180,17 @@
     "name": "Curtain Cleaning",
     "img": "https://i.ibb.co/M1fDjdj/ana-nogrey-Bs2-FKl3wegg-unsplash.jpg",
     "price": 30,
-    "features":
-      "1. Vacuuming of dust with vacuum cleaners with HEPA filter for maximum impact,2. Special steam treatment to disinfect and sanitize completely,3. Residual moisture or dissolve dirt vacuum out.",
-
+    "features": [
+      "1. Vacuuming of dust with vacuum cleaners with HEPA filter for maximum impact",
+      "2. Special steam treatment to disinfect and sanitize completely ",
+      "3. Residual moisture or dissolve dirt vacuum out."
+    ],
     "description": "When was the last time your curtains and drapes were professionally cleaned? The Amazing Clean professional curtain cleaning company knows that fresh curtains and drapes make all the difference in your home. Amazing's local curtain cleaners and drapery cleaning service always provide the best curtain cleaning service when it comes to rejuvenating your curtains, with dedication to going the extra mile in making sure the final result is nothing short of spectacular.",
-
-    "benefits": "1 .Modern techniques to clean hard spots and stains,2. Eco-friendly and gentle yet effective product,3. Cutting edge technology to ensure less drying time",
-
+    "benefits": [
+      "1. Modern techniques to clean hard spots and stains",
+      "2. Eco-friendly and gentle yet effective products",
+      "3. Cutting edge technology to ensure less drying time"
+    ],
     "ratings": 3.5,
     "reviews": [
       {
@@ -188,12 +214,20 @@
     "name": "Ceiling, Floors, and Wall Cleaning",
     "img": "https://i.ibb.co/VDFRhHX/henry-co-3co-Kbdfn-AFg-unsplash.jpg",
     "price": 100,
-    "features":
-      "1. Ceilings and walls are cleaned and restored using the exclusive Commercial Cleaning Services non-toxic, non-flammable, odorless solution that is applied in a very fine mist.,2. Restore the entire ceiling and wall area without dismantling,3. Clean a variety of ceilings and walls including ceramic, vinyl and wallpaper, brick, stone, aluminum, and both flat and gloss paint,4. I can clean all types of surfaces including, grids, vents, and light fixtures,5. Removes odors and does not contain chlorine, bleach, ammonia, or solvents.,6. Sanitizes as it cleans and eradicates bacteria, mold, yeast, and fungi.",
-
+    "features": [
+      "1. Ceilings and walls are cleaned and restored using the exclusive Commercial Cleaning Services non-toxic, non-flammable, odorless solution that is applied in a very fine mist.",
+      "2. Restore the entire ceiling and wall area without dismantling",
+      "3. Clean a variety of ceilings and walls including ceramic, vinyl and wallpaper, brick, stone, aluminum, and both flat and gloss paint",
+      "4. I can clean all types of surfaces including, grids, vents, and light fixtures",
+      "5. Removes odors and does not contain chlorine, bleach, ammonia, or solvents.",
+      "6. Sanitizes as it cleans and eradicates bacteria, mold, yeast, and fungi."
+    ],
     "description": "The power of our Commercial Ceiling and Wall Cleaning services provide a  tremendous cost savings that we deliver to our commercial clientele. In most cases, we can save our customer 80% the cost of replacement, and 75% the cost of painting. Our services are performed after hours…which means we don’t interrupt daily revenue and business operations.",
-    "benefits":
-      "1. Makes Your Home Look Good,2. Prevents Mold and Mildew ,3. Winterize Your Walls",
+    "benefits": [
+      "1. Makes Your Home Look Good",
+      "2. Prevents Mold and Mildew ",
+      "3. Winterize Your Walls"
+    ],
     "ratings": 4.5,
     "reviews": [
       {
@@ -217,11 +251,18 @@
     "name": "Furniture Cleaning",
     "img": "https://i.ibb.co/Yj43fSy/taylor-hernandez-cm-Pp-UQU-lk-unsplash.jpg",
     "price": 50,
-    "features":"1. Stain Protectant,2. Stain Removal,3. Deodorization,4. Pet Stains & Odors",
-
+    "features": [
+      "1. Stain Protectant",
+      "2. Stain Removal",
+      "3. Deodorization",
+      "4. Pet Stains & Odors"
+    ],
     "description": "Everyone likes to keep their environment clean and neat. Cleaning the house now and then would be easier to make the place neat looking and dust free environment. Most people forget to clean the Upholstery in their home often so that it could accumulate more dust and dirt as well as allergens in the fibers. When you are laying or sitting on the furniture, then you could breathe the dirt which would cause more lung damages. To improve the environment and have a clean life, it is best to choose the experts professional furniture cleaning in a more significant way. ",
-    "benefits":
-      "1. Better Appearance Of Furniture,2. Removing Dirt And Allergens,3. Easy Cleaning Policy",
+    "benefits": [
+      "1. Better Appearance Of Furniture",
+      "2. Removing Dirt And Allergens",
+      "3. Easy Cleaning Policy"
+    ],
     "ratings": 3.5,
     "reviews": [
       {
@@ -242,8 +283,3 @@
     ]
   }
 ]
-
-
-
-
-
