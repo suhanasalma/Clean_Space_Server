@@ -21,23 +21,6 @@ const client = new MongoClient(uri, {
 });
 
 
-function verifyJWTToken (req,res,next){
-   console.log(req.headers.authorization)
-   const authHeader = req.headers.authorization;
-   if(!authHeader){
-      res.status(401).send({message:'unauthorize access'})
-   }
-   const token = authHeader.split(' ')[1]
-   jwt.verify(token, process.env.JWT_Token, function (err, decoded) {
-     if (err) {
-       return res.status(403).send({ message: "Forbidden access" });
-     }
-     req.decoded = decoded;
-     next();
-   });
-}
-
-
 async function run(){
    try{
       const serviceCollection = client
@@ -45,13 +28,6 @@ async function run(){
         .collection("Services");
 
       const reviewCollection = client.db("cleaningService").collection('reviews')
-
-      app.post('/jwt',(req,res)=>{
-         const user = req.body
-         const token = jwt.sign(user, process.env.JWT_Token, {expiresIn:'1h'});
-         console.log(user)
-         res.send({token});
-      })
 
         app.get('/services',async(req,res)=>{
          const page = parseInt(req.query.page)
@@ -80,23 +56,19 @@ async function run(){
         })
 
 
-        app.post('/comments',async(req,res)=>{
-           const comment = req.body;
-           const result = await reviewCollection.insertOne(comment);
-           res.send(result)
-        })
+        app.post("/comments", async (req, res) => {
+          const comment = req.body;
+          const result = await reviewCollection.insertOne(comment);
+          res.send(result);
+        });
 
 
-           app.get("/comments", verifyJWTToken, async (req, res) => {
+           app.get("/comments", async (req, res) => {
              let query = {};
-             const decoded = req.decoded
-             console.log("inside order api", decoded);
-             if (decoded.email !== req.query.email){
-               res.status(403).send({message:'unauthorize access'})
-             }
-               if (req.query.email) {
-                 query = { email: req.query.email };
-               }
+
+            if (req.query.email) {
+               query = { email: req.query.email };
+            }
              if (req.query.post) {
                query = { post: req.query.post };
              }
@@ -107,9 +79,9 @@ async function run(){
 
           app.delete("/comments/:id", async (req, res) => {
             const id = req.params.id;
-            const query = {_id:ObjectId(id)}
-            const result = await reviewCollection.deleteOne(query)
-            res.send(result)
+            const query = { _id: ObjectId(id) };
+            const result = await reviewCollection.deleteOne(query);
+            res.send(result);
           });
 
             
