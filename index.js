@@ -19,7 +19,6 @@ const client = new MongoClient(uri, {
   serverApi: ServerApiVersion.v1,
 });
 
-console.log(uri)
 
 async function run(){
    try{
@@ -42,7 +41,6 @@ async function run(){
 
         app.post("/services",async(req,res)=>{
          const service = req.body;
-         console.log(service)
          const result = await serviceCollection.insertOne(service)
          res.send(result)
 
@@ -80,7 +78,6 @@ async function run(){
           app.delete("/comments/:id", async (req, res) => {
             const id = req.params.id;
             const query = {_id:ObjectId(id)}
-            console.log(query)
             const result = await reviewCollection.deleteOne(query)
             res.send(result)
           });
