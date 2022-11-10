@@ -59,7 +59,7 @@ async function run(){
        const page = parseInt(req.query.page);
        const size = parseInt(req.query.size);
        const query = {};
-       const cursor = serviceCollection.find(query)
+       const cursor = serviceCollection.find(query).sort( {"_id" : -1} );
        const services = await cursor
          .skip(page * size)
          .limit(size)
@@ -93,10 +93,12 @@ async function run(){
          query = { post: req.query.post };
          
        }
-       const cursor = reviewCollection.find(query);
+       const cursor = reviewCollection.find(query).sort({time:-1});
        const comments = await cursor.toArray();
        res.send(comments);
      });
+
+     
 
 
        app.get("/comments", verifyJWT, async (req, res) => {
@@ -111,9 +113,40 @@ async function run(){
        if (req.query.email) {
          query = { email: req.query.email };
        }
-       const cursor = reviewCollection.find(query);
+       const cursor = reviewCollection.find(query).sort({time:-1});
        const comments = await cursor.toArray();
        res.send(comments);
+     });
+
+
+     app.get("/allcoments/:id", async (req, res) => {
+       const id = req.params.id;
+       const query = { _id: ObjectId(id) };
+       const result = await reviewCollection.findOne(query);
+       res.send(result);
+     });
+
+     app.patch("/allcoments/:id", async(req, res) => {
+       const id = req.params.id;
+       const filter = { _id: ObjectId(id) };
+       const updateComment = req.body;
+      //  console.log(updateComment)
+       const options = { upsert: true };
+       const updateInfo = {
+         $set: {
+           review: updateComment.review,
+           time: updateComment.time,
+         },
+       }
+       console.log(updateInfo)
+       const result = await reviewCollection.updateOne(
+         filter,
+         updateInfo,
+         options
+       );
+       console.log(result)
+       res.send(result)
+
      });
 
 
