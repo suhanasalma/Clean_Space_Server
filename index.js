@@ -59,7 +59,7 @@ async function run(){
        const page = parseInt(req.query.page);
        const size = parseInt(req.query.size);
        const query = {};
-       const cursor = serviceCollection.find(query);
+       const cursor = serviceCollection.find(query)
        const services = await cursor
          .skip(page * size)
          .limit(size)
@@ -116,7 +116,7 @@ async function run(){
        res.send(comments);
      });
 
-     
+
 
      app.delete("/comments/:id", async (req, res) => {
        const id = req.params.id;
